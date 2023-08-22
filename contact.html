@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant KEA</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" title="Home page">Home</a></li>
+          <li><a href="menu.html" title="Food menu">Menu</a></li>
+          <li><a href="contact.html" title="Contact us">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <address>
+          Guldbergsgade 29N 2200 Copenhagen <br />
+          <br />
+          Phone no.:<a href="tel:20825370" title="Restaurant KEA"> 20 82 53 70 </a><br />
+          <br />
+          E-mail: <a href="mailto:info@restaurantkea.dk">info@restaurantkea.dk</a>
+        </address>
+      </section>
+      <section>
+        <img
+          src="img/map.jpg"
+          alt="three dimensional satelite picture of the restaurants location"
+        />
+      </section>
+      <section>
+        <form action="" name="contact_form" id="contact_form">
+          <label for="contact_form">Contact form</label>
+          <label for="full_name">
+            Full name
+            <input type="text" name="full_name" id="full_name" />
+          </label>
+          <label for="phone_number">
+            Phone no.
+            <input type="text" name="phone_number" id="phone_number" />
+          </label>
+          <label for="email">
+            E-mail
+            <input type="email" name="email" id="email" />
+          </label>
+          <label for="persons">
+            Persons
+            <input type="text" name="persons" id="persons" />
+          </label>
+          <label for="date">
+            Date and time
+            <input type="datetime-local" name="date" id="date" />
+          </label>
+          <label for="further_info">
+            Further information
+            <textarea name="further_info" id="further_info" cols="10" rows="2"></textarea>
+          </label>
+          <input type="submit" value="Send" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 KEA Development</p>
+    </footer>
+  </body>
+</html>
