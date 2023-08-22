@@ -34,32 +34,37 @@
       </section>
       <section>
         <form action="" name="contact_form" id="contact_form">
-          <label for="contact_form">Contact form</label>
-          <label for="full_name">
-            Full name
-            <input type="text" name="full_name" id="full_name" />
-          </label>
-          <label for="phone_number">
-            Phone no.
-            <input type="text" name="phone_number" id="phone_number" />
-          </label>
-          <label for="email">
-            E-mail
-            <input type="email" name="email" id="email" />
-          </label>
-          <label for="persons">
-            Persons
-            <input type="text" name="persons" id="persons" />
-          </label>
-          <label for="date">
-            Date and time
-            <input type="datetime-local" name="date" id="date" />
-          </label>
-          <label for="further_info">
-            Further information
-            <textarea name="further_info" id="further_info" cols="10" rows="2"></textarea>
-          </label>
-          <input type="submit" value="Send" />
+          <fieldset>
+            <legend>Contact form</legend>
+            <label for="full_name">
+              Full name
+              <input type="text" name="full_name" id="full_name" /> </label
+            ><br />
+
+            <label for="phone_number">
+              Phone no.
+              <input type="tel" name="phone_number" id="phone_number" /> </label
+            ><br />
+
+            <label for="email">
+              E-mail
+              <input type="email" name="email" id="email" /> </label
+            ><br />
+
+            <label for="persons">
+              Persons
+              <input type="text" name="persons" id="persons" /> </label
+            ><br />
+
+            <label for="date">
+              Date and time
+              <input type="datetime-local" name="date" id="date" /> </label
+            ><br />
+            <label for="textarea"> Further information </label><br />
+            <textarea name="textarea" id="textarea" cols="21" rows="2"></textarea>
+            <br />
+            <input type="submit" value="Send" />
+          </fieldset>
         </form>
       </section>
     </main>
