@@ -3,73 +3,81 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Contact us</title>
   </head>
   <body>
     <header>
-      <h1>Restaurant KEA</h1>
+      <div class="headerTitle"><h1>Restaurant KEA</h1></div>
       <nav>
         <ul>
           <li><a href="index.html" title="Home page">Home</a></li>
           <li><a href="menu.html" title="Food menu">Menu</a></li>
-          <li><a href="contact.html" title="Contact us">Contact</a></li>
+          <li><a href="contact.html" class="active" title="Contact us">Contact</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section>
-        <address>
-          <p>Guldbergsgade 29N, 2200 Copenhagen</p>
-          <p>Phone no.: <a href="tel:20825370" title="Phone Restaurant KEA">20 82 53 70</a></p>
-          <p>
-            E-mail:
-            <a href="mailto:info@restaurantkea.dk" title="Email Restaurant KEA"
-              >info@restaurantkea.dk</a
-            >
-          </p>
-        </address>
-      </section>
-      <section>
-        <img
-          src="img/map.jpg"
-          alt="three dimensional satelite picture of the restaurants location"
-        />
-      </section>
-      <section>
-        <form action="" name="contact_form" id="contact_form">
-          <fieldset>
-            <legend>Contact form</legend>
-            <label for="full_name">
-              Full name
-              <input type="text" name="full_name" id="full_name" /> </label
-            ><br />
+      <div class="contact">
+        <section class="contactImg">
+          <img
+            src="img/map.jpg"
+            alt="three dimensional satelite picture of the restaurants location"
+          />
+        </section>
+        <div class="contactInfo">
+          <section>
+            <address>
+              <p>Guldbergsgade 29N, 2200 Copenhagen</p>
+              <p>Phone no.: <a href="tel:20825370" title="Phone Restaurant KEA">20 82 53 70</a></p>
+              <p>
+                E-mail:
+                <a href="mailto:info@restaurantkea.dk" title="Email Restaurant KEA"
+                  >info@restaurantkea.dk</a
+                >
+              </p>
+            </address>
+          </section>
 
-            <label for="phone_number">
-              Phone no.
-              <input type="tel" name="phone_number" id="phone_number" /> </label
-            ><br />
+          <section>
+            <form action="process.php" name="contact_form" id="contact_form" method="POST">
+              <fieldset>
+                <legend>Contact form</legend>
+                <div class="contactInput">
+                  <label for="full_name"> Full name </label>
+                  <input type="text" name="full_name" id="full_name" />
+                </div>
 
-            <label for="email">
-              E-mail
-              <input type="email" name="email" id="email" /> </label
-            ><br />
+                <div class="contactInput">
+                  <label for="phone_number"> Phone no. </label>
+                  <input type="tel" name="phone_number" id="phone_number" />
+                </div>
 
-            <label for="persons">
-              Persons
-              <input type="text" name="persons" id="persons" /> </label
-            ><br />
+                <div class="contactInput">
+                  <label for="email"> E-mail </label>
+                  <input type="email" name="email" id="email" />
+                </div>
 
-            <label for="date">
-              Date and time
-              <input type="datetime-local" name="date" id="date" /> </label
-            ><br />
-            <label for="textarea"> Further information </label><br />
-            <textarea name="textarea" id="textarea"></textarea>
-            <br />
-            <input type="submit" value="Send" />
-          </fieldset>
-        </form>
-      </section>
+                <div class="contactInput">
+                  <label for="people"> People </label>
+                  <input type="text" name="people" id="people" />
+                </div>
+
+                <div class="contactInput">
+                  <label for="date"> Date and time </label>
+                  <input type="datetime-local" name="date" id="date" />
+                </div>
+                <div class="contactTextarea">
+                  <label for="textarea"> Further information </label>
+                  <textarea name="textarea" id="textarea"></textarea>
+                </div>
+
+                <input type="submit" value="Send" />
+              </fieldset>
+            </form>
+          </section>
+        </div>
+      </div>
     </main>
     <footer>
       <p>&copy; 2023 KEA Development</p>
