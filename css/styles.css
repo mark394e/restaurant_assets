@@ -169,6 +169,8 @@ footer {
 
 .menuItem .menuItemImg {
   order: -1;
+  display: flex;
+  justify-content: center;
 }
 
 .contact {
@@ -285,6 +287,7 @@ input[type="submit"] {
   .menuItem {
     flex-direction: row;
     gap: 1rem;
+    justify-content: space-between;
   }
 
   .menuItem .menuItemImg {
@@ -351,5 +354,13 @@ input[type="submit"] {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem;
+  }
+
+  .menuItem {
+    margin-bottom: 0;
+  }
+
+  .menuItem .menuItemImg {
+    display: unset;
   }
 }
